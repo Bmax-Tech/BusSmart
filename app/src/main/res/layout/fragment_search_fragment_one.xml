@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.bb.hp_pc.bussmartv3.SearchFragmentOne">
+
+    <LinearLayout
+        android:background="@drawable/background_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <ListView
+            android:foreground="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_result_list_1"
+            android:layout_gravity="center_horizontal"
+            android:dividerHeight="1dp"
+            android:divider="@null"
+            />
+
+        <LinearLayout
+            android:id="@+id/hidden_layout"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/no_sch_img"
+                android:layout_marginTop="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/no_schedule"/>
+
+            <TextView
+                android:id="@+id/no_sch_txt"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textSize="20dp"
+                android:textColor="#565656"
+                android:text="no schedules found.."/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Content Map -->
+
+</RelativeLayout>

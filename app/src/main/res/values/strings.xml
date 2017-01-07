@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BusSmart</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_quit">Quit</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spinner_title">Select No</string>
+    <string name="title_activity_messages_screen">Messages</string>
+    <string name="title_activity_chat_screen">Name</string>
+    <string name="title_activity_search_bus_screen">Search Bus</string>
+    <string name="title_activity_map_view_screen">Map View</string>
+    <string name="title_activity_drive_mode_screen">Drive Mode</string>
+    <string name="title_activity_add_schedules_screen">Add Schedule</string>
+    <string name="title_activity_update_account_screen">Update Account</string>
+</resources>

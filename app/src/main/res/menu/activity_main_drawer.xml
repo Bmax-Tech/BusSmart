@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home" android:icon="@drawable/home_icon"
+            android:title="Home" />
+        <item android:id="@+id/nav_drive_mode" android:icon="@drawable/side_icon_1"
+            android:title="Drive Mode" />
+        <item android:id="@+id/nav_search_bus" android:icon="@drawable/side_icon_2"
+            android:title="Search Bus" />
+        <item android:id="@+id/nav_map_view" android:icon="@drawable/side_icon_3"
+            android:title="Map View" />
+        <item android:id="@+id/nav_messages" android:icon="@drawable/side_icon_4"
+            android:title="Messages" />
+        <item android:id="@+id/nav_add_schedule" android:icon="@drawable/side_icon_5"
+            android:title="Add Schedule" />
+    </group>
+
+    <item android:title="Control">
+        <menu>
+            <item android:id="@+id/nav_exit" android:icon="@drawable/exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior" tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/background_1"
+    android:id="@+id/main_content"
+    tools:context=".MainActivity">
+
+    <!-- *************** -->
+
+    <LinearLayout
+        android:background="@drawable/background_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="30dp"
+        android:paddingTop="5dp"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+        <!-- Clock Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/time_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00 : 00 : 00"
+                    android:textSize="39dp"
+                    android:textColor="#000"
+                    android:shadowColor="#fff"
+                    android:shadowDx="-1"
+                    android:shadowDy="-1"
+                    android:shadowRadius="1"
+                    android:layout_marginLeft="19dp"
+                    android:fontFamily="sans-serif-light"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/day_1_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wendsday"
+                            android:textColor="#000"
+                            android:shadowColor="#fff"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"/>
+
+                        <TextView
+                            android:id="@+id/day_2_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="17"
+                            android:textColor="#000"
+                            android:shadowColor="#fff"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="sans-serif-light"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/month_box"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="March"
+                            android:textSize="16dp"
+                            android:textColor="#000000"
+                            android:shadowColor="#ffffff"
+                            android:shadowDx="-1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="0dp"
+                            android:fontFamily="sans-serif-bold"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Clock Bar -->
+
+        <!-- Content Buttons -->
+        <LinearLayout
+            android:id="@+id/content_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:weightSum="100"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="65"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/drive_mode_btn"
+                    android:padding="0dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:layout_marginTop="@dimen/activity_home_btn_gap"
+                    android:src="@drawable/btn_1"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageButton
+                    android:id="@+id/search_bus_btn"
+                    android:padding="0dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:layout_marginTop="@dimen/activity_home_btn_gap"
+                    android:src="@drawable/btn_2"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageButton
+                    android:id="@+id/map_view_btn"
+                    android:padding="0dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/activity_home_btn_gap"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/btn_3"
+                    android:scaleType="centerCrop"
+                    />
+                <ImageButton
+                    android:id="@+id/message_btn"
+                    android:padding="0dp"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/activity_home_btn_gap"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:src="@drawable/btn_4"
+                    android:scaleType="centerCrop"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!-- Content Buttons -->
+
+    </LinearLayout>
+
+    <!-- *************** -->
+
+
+</RelativeLayout>
